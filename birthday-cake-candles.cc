@@ -2,7 +2,7 @@
 using namespace std;
 
 int birthdayCakeCandles(int n, vector<int> candles) {
-  sort(candles.begin(), candles.end(), greater<int>());
+  sort(candles.rbegin(), candles.rend());
   int count = 1;
   for (int i = 1; i < n; i++) {
     if (candles[i] == candles[0]) {
