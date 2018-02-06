@@ -18,12 +18,8 @@ void countApplesAndOranges(int s, int t, int a, int b, vector<int> apples, vecto
 }
 
 int main() {
-  int s, t;
-  cin >> s >> t;
-  int a, b;
-  cin >> a >> b;
-  int m, n;
-  cin >> m >> n;
+  int s, t, a, b, m, n;
+  cin >> s >> t >> a >> b >> m >> n;
   vector<int> apples(m);
   for (int i = 0; i < m; i++) {
     cin >> apples[i];
