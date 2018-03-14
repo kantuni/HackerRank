@@ -4,12 +4,11 @@ using namespace std;
 int main() {
   int n, m;
   cin >> n >> m;
-  vector<int> A(n), B(m);
-  
+  vector<int> A(n);
   for (int i = 0; i < n; i++) {
     cin >> A[i];
   }
-  
+  vector<int> B(m);
   for (int i = 0; i < m; i++) {
     cin >> B[i];
   }
@@ -31,7 +30,6 @@ int main() {
     }
     if (ok) counter++;
   }
-  
   cout << counter << "\n";
   return 0;
 }
