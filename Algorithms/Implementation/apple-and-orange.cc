@@ -2,13 +2,13 @@
 using namespace std;
 
 void countApplesAndOranges(int s, int t, int a, int b, vector<int> apples, vector<int> oranges) {
-  int applesno = count_if(apples.begin(), apples.end(), [a, s, t] (int d) {
+  int capples = count_if(apples.begin(), apples.end(), [a, s, t] (int d) {
     return a + d >= s and a + d <= t;
   });
-  int orangesno = count_if(oranges.begin(), oranges.end(), [b, s, t] (int d) { 
+  int coranges = count_if(oranges.begin(), oranges.end(), [b, s, t] (int d) { 
     return b + d >= s and b + d <= t;
   });
-  cout << applesno << "\n" << orangesno << "\n";
+  cout << capples << "\n" << coranges << "\n";
 }
 
 int main() {
