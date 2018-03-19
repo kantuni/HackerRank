@@ -4,6 +4,6 @@ class Polygon {
   }
 
   perimeter() {
-    return this.lengths.reduce((acc, curr) => acc + curr, 0);
+    return this.lengths.reduce((acc, curr) => acc + curr);
   }
 }
