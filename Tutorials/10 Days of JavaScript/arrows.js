@@ -1,6 +1,3 @@
 function modifyArray(nums) {
-  return nums.map(num => {
-    if (num % 2) return num * 3;
-    return num * 2;
-  });
+  return nums.map(n => n % 2 ? n * 3 : n * 2);
 }
