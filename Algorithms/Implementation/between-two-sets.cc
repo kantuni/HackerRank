@@ -8,7 +8,7 @@ int main() {
   for (int i = 0; i < n; i++) cin >> A[i];
   vector<int> B(m);
   for (int i = 0; i < m; i++) cin >> B[i];
-  int counter = 0;
+  int cnt = 0;
   for (int i = 1; i <= 100; i++) {
     bool ok = true;
     for (int j = 0; j < n; j++) {
@@ -23,8 +23,8 @@ int main() {
         break;
       }
     }
-    if (ok) counter++;
+    if (ok) cnt++;
   }
-  cout << counter << "\n";
+  cout << cnt << "\n";
   return 0;
 }
