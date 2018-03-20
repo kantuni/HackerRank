@@ -5,21 +5,15 @@ int main() {
   int n; 
   cin >> n;
   vector<int> s(n);
-  for (int i = 0; i < n; i++) {
-    cin >> s[i];
-  }
+  for (int i = 0; i < n; i++) cin >> s[i];
   int d, m;
   cin >> d >> m;
-  
-  int counter = 0;
+  int cnt = 0;
   for (int i = 0; i <= n - m; i++) {
     int sum = 0;
-    for (int j = 0; j < m; j++) {
-      sum += s[i + j];
-    }
-    if (sum == d) counter++;
+    for (int j = 0; j < m; j++) sum += s[i + j];
+    if (sum == d) cnt++;
   }
-  
-  cout << counter << "\n";
+  cout << cnt << "\n";
   return 0;
 }
