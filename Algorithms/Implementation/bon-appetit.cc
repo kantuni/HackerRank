@@ -13,10 +13,7 @@ int main() {
   int charged;
   cin >> charged;
   double actual = (sum - c[k]) / 2.0;
-  if (charged - actual == 0) {
-    cout << "Bon Appetit\n";
-  } else {
-    cout << charged - actual << "\n";
-  }
+  if (charged - actual == 0) cout << "Bon Appetit\n";
+  else cout << charged - actual << "\n";
   return 0;
 }
