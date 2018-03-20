@@ -11,9 +11,7 @@ int main() {
     um[c]++;
   }
   int cnt = 0;
-  for (auto kv: um) {
-    cnt += kv.second / 2;
-  }
+  for (auto kv: um) cnt += kv.second / 2;
   cout << cnt << "\n";
   return 0;
 }
