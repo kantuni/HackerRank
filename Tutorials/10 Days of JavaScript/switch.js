@@ -25,9 +25,7 @@ function getLetter(s) {
       letter = 'C';
       break;
     }
-    default: {
-      letter = 'D';
-    }
+    default: letter = 'D';
   }
   return letter;
 }
