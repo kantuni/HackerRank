@@ -1,8 +1,7 @@
 function getDayName(dateString) {
-  const daysOfTheWeek = [
-    'Sunday', 'Monday', 'Tuesday', 'Wednesday',
-    'Thursday', 'Friday', 'Saturday'
-  ];
-  const day = new Date(dateString).getDay();
-  return daysOfTheWeek[day];
+  const date = new Date(dateString);
+  const options = {
+    weekday: 'long'
+  };
+  return new Intl.DateTimeFormat('en-US', options).format(date);
 }
