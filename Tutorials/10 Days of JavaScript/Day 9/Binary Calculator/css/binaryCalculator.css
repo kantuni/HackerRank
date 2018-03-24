@@ -4,13 +4,9 @@ body {
 
 #res {
   background-color: lightgray;
-  border: 2px solid #000;
+  border: solid;
   font-size: 20px;
   height: 48px;
-}
-
-#btns {
-  clear: both;
 }
 
 #btns button {
