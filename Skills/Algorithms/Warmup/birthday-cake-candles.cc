@@ -3,11 +3,11 @@ using namespace std;
 
 int birthdayCakeCandles(int n, vector<int> candles) {
   sort(candles.rbegin(), candles.rend());
-  int count = 1;
+  int cnt = 1;
   for (int i = 1; i < n; i++) {
-    if (candles[i] == candles[0]) count++;
+    if (candles[i] == candles[0]) cnt++;
   }
-  return count;
+  return cnt;
 }
 
 int main() {
