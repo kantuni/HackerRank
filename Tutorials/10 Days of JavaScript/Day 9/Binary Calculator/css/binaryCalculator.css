@@ -9,7 +9,7 @@ body {
   height: 48px;
 }
 
-#btns button {
+#btns > button {
   float: left;
   font-size: 18px;
   height: 36px;
