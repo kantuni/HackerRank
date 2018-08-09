@@ -11,7 +11,9 @@ int main() {
     memo[c]++;
   }
   int cnt = 0;
-  for (auto kv: memo) cnt += kv.second / 2;
+  for (auto m: memo) {
+    cnt += m.second / 2;
+  }
   cout << cnt << "\n";
   return 0;
 }
