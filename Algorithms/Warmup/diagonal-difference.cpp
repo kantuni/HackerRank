@@ -6,7 +6,9 @@ int main() {
   cin >> n;
   vector<vector<int> > M(n, vector<int>(n));
   for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n; j++) cin >> M[i][j];
+    for (int j = 0; j < n; j++) {
+      cin >> M[i][j];
+    }
   }
   int ld = 0, rd = 0;
   for (int i = 0; i < n; i++) {
