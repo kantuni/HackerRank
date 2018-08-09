@@ -14,8 +14,12 @@ int main() {
   hh = string(1, h1) + string(1, h2);
   mm = string(1, m1) + string(1, m2);
   ss = string(1, s1) + string(1, s2);
-  if (hh == "12") hh = "00";
-  if (ampm == "PM") hh = to_string(stoi(hh) + 12);
+  if (hh == "12") {
+    hh = "00";
+  }
+  if (ampm == "PM") {
+    hh = to_string(stoi(hh) + 12);
+  }
   cout << hh << ":" << mm << ":" << ss << "\n";
   return 0;
 }
