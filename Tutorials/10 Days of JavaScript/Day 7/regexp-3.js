@@ -1,3 +1,3 @@
 function regexVar() {
-  return /\d+/g;
+  return /\d+/g
 }
