@@ -13,7 +13,7 @@ int main() {
   int ld = 0, rd = 0;
   for (int i = 0; i < n; i++) {
     ld += M[i][i];
-    rd += M[i][n - i - 1];
+    rd += M[i][n - 1 - i];
   }
   cout << abs(ld - rd) << "\n";
   return 0;
