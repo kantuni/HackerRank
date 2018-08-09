@@ -5,9 +5,13 @@ int main() {
   int n, m;
   cin >> n >> m;
   vector<int> A(n);
-  for (int i = 0; i < n; i++) cin >> A[i];
+  for (int i = 0; i < n; i++) {
+    cin >> A[i];
+  }
   vector<int> B(m);
-  for (int i = 0; i < m; i++) cin >> B[i];
+  for (int i = 0; i < m; i++) {
+    cin >> B[i];
+  }
   int cnt = 0;
   for (int i = 1; i <= 100; i++) {
     bool ok = true;
@@ -23,7 +27,9 @@ int main() {
         break;
       }
     }
-    if (ok) cnt++;
+    if (ok) {
+      cnt++;
+    }
   }
   cout << cnt << "\n";
   return 0;
