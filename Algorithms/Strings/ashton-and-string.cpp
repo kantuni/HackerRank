@@ -1,19 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-string substrings(string s) {
-  set<string> all;
-  for (int i = 0; i < s.size(); i++) {
-    for (int len = 1; len <= s.size(); len++) {
-      all.insert(s.substr(i, len));
+struct Node {
+  Node* children[26];
+};
+
+struct Trie {
+  Node* root = new Node();
+
+  void add(Node* curr, string key) {
+    if (key == "") return;
+    int index = key[0] - 'a';
+    if (curr->children[index] == NULL) {
+      curr->children[index] = new Node();
     }
+    add(curr->children[index], key.substr(1));
   }
-  string concat;
-  for (auto substr: all) {
-    concat += substr;
-  }
-  return concat;
-}
+};
 
 int main() {
   int t;
@@ -22,8 +25,17 @@ int main() {
     string s;
     int k;
     cin >> s >> k;
-    string all = substrings(s);
-    cout << all[k - 1] << "\n";
+    Trie* trie = new Trie();
+    for (int i = 0; i < s.size(); i++) {
+      for (int len = 1; len <= s.size() - i; len++) {
+        string sub = s.substr(i, len);
+        trie->add(trie->root, sub);
+      }
+    }
+    // TODO: check if the trie is correct.
+    //string concat = trie->concat(trie->root, "");
+    //cout << concat << "\n";
+    //cout << concat[k - 1] << "\n";
   }
   return 0;
 }
