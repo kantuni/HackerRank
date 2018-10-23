@@ -1,5 +1,5 @@
 function getGrade(score) {
-  let grade
+  let grade = "F"
   if (score > 25 && score <= 30) {
     grade = "A"
   } else if (score > 20 && score <= 25) {
@@ -10,8 +10,6 @@ function getGrade(score) {
     grade = "D"
   } else if (score > 5 && score <= 10) {
     grade = "E"
-  } else {
-    grade = "F"
   }
   return grade;
 }
