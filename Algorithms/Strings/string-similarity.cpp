@@ -21,7 +21,7 @@ int main() {
   while (t--) {
     string s;
     cin >> s;
-    cout << similarity(s) << "\n";
+    cout << similarity(s) << endl;
   }
   return 0;
 }
