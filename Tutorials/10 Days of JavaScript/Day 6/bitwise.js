@@ -7,5 +7,5 @@ function getMaxLessThanK(n, k) {
       }
     }
   }
-  return max;
+  return max
 }
