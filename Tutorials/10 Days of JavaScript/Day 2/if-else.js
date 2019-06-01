@@ -11,5 +11,5 @@ function getGrade(score) {
   } else if (score > 5 && score <= 10) {
     grade = "E"
   }
-  return grade;
+  return grade
 }
