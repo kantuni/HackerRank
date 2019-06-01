@@ -1,6 +1,6 @@
 function getLetter(s) {
   let letter
-  switch (s[0]) {
+  switch (s.charAt(0)) {
     case "a":
     case "e":
     case "i":
