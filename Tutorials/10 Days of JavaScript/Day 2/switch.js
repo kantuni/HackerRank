@@ -1,6 +1,6 @@
 function getLetter(s) {
   const first = s.charAt(0)
-  let letter = "D"
+  let letter = null
   switch (first) {
     case "a":
     case "e":
