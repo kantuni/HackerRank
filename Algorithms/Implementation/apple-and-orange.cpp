@@ -8,7 +8,8 @@ void countApplesAndOranges(int s, int t, int a, int b, vector<int> apples, vecto
   int coranges = count_if(oranges.begin(), oranges.end(), [s, t, b] (int d) { 
     return b + d >= s and b + d <= t;
   });
-  cout << capples << "\n" << coranges << "\n";
+  cout << capples << endl;
+  cout << coranges << endl;
 }
 
 int main() {
