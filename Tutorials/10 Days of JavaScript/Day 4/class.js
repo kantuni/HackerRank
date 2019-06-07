@@ -4,6 +4,7 @@ class Polygon {
   }
 
   perimeter() {
-    return this.lengths.reduce((acc, curr) => acc + curr)
+    const reducer = (accumulator, currentValue) => accumulator + currentValue
+    return this.lengths.reduce(reducer)
   }
 }
