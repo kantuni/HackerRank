@@ -2,18 +2,18 @@
 using namespace std;
 
 int main() {
-  vector<int> numbers(5);
+  vector<int> nums(5);
   for (int i = 0; i < 5; i++) {
-    cin >> numbers[i];
+    cin >> nums[i];
   }
-  sort(numbers.begin(), numbers.end());
-  long long min = 0, max = 0;
+  sort(nums.begin(), nums.end());
+  long long mn = 0, mx = 0;
   for (int i = 0; i < 4; i++) {
-    min += numbers[i];
+    mn += nums[i];
   }
   for (int i = 1; i < 5; i++) {
-    max += numbers[i];
+    mx += nums[i];
   }
-  cout << min << " " << max << "\n";
+  cout << mn << " " << mx << endl;
   return 0;
 }
