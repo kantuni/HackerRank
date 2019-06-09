@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> solve(vector<int> grades) {
+vector<int> solve(vector<int>& grades) {
   for (int i = 0; i < grades.size(); i++) {
-    int next = (grades[i] / 5 + 1) * 5;
-    if (next - grades[i] < 3 and grades[i] >= 38) {
-      grades[i] = next;
+    int nxt = (grades[i] / 5 + 1) * 5;
+    if (nxt - grades[i] < 3 and grades[i] >= 38) {
+      grades[i] = nxt;
     }
   }
   return grades;
@@ -22,6 +22,6 @@ int main() {
   for (int i = 0; i < result.size(); i++) {
     cout << result[i] << (i != result.size() - 1 ? "\n" : "");
   }
-  cout << "\n";
+  cout << endl;
   return 0;
 }
