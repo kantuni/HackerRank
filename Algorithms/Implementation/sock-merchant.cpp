@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-  unordered_map<int, int> memo;
+  map<int, int> memo;
   int n;
   cin >> n;
   while (n--) {
@@ -14,6 +14,6 @@ int main() {
   for (auto m: memo) {
     cnt += m.second / 2;
   }
-  cout << cnt << "\n";
+  cout << cnt << endl;
   return 0;
 }
