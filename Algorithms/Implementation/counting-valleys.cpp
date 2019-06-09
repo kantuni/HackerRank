@@ -17,6 +17,6 @@ int main() {
       lvl++;
     }
   }
-  cout << cnt << "\n";
+  cout << cnt << endl;
   return 0;
 }
