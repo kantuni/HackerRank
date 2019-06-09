@@ -22,6 +22,6 @@ int main() {
   } else if (a2 < b2) {
     b += 1;
   }
-  cout << a << " " << b << "\n";
+  cout << a << " " << b << endl;
   return 0;
 }
