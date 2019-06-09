@@ -20,6 +20,6 @@ int main() {
   if (ampm == "PM") {
     hh = to_string(stoi(hh) + 12);
   }
-  cout << hh << ":" << mm << ":" << ss << "\n";
+  cout << hh << ":" << mm << ":" << ss << endl;
   return 0;
 }
