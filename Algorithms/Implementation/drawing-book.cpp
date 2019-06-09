@@ -6,6 +6,6 @@ int main() {
   cin >> n >> p;
   int ff = p / 2;
   int fb = n / 2 - ff;
-  cout << min(ff, fb) << "\n";
+  cout << min(ff, fb) << endl;
   return 0;
 }
