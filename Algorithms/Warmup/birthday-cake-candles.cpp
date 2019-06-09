@@ -19,6 +19,6 @@ int main() {
   for (int i = 0; i < n; i++) {
     cin >> candles[i];
   }
-  cout << birthdayCakeCandles(n, candles) << "\n";
+  cout << birthdayCakeCandles(n, candles) << endl;
   return 0;
 }
