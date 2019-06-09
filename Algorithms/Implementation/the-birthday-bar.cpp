@@ -20,6 +20,6 @@ int main() {
       cnt++;
     }
   }
-  cout << cnt << "\n";
+  cout << cnt << endl;
   return 0;
 }
