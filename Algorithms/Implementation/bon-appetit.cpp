@@ -14,9 +14,9 @@ int main() {
   cin >> charged;
   double actual = (sum - c[k]) / 2.0;
   if (charged - actual == 0) {
-    cout << "Bon Appetit\n";
+    cout << "Bon Appetit" << endl;
   } else {
-    cout << charged - actual << "\n";
+    cout << charged - actual << endl;
   }
   return 0;
 }
