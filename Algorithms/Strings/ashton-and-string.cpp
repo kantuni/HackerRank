@@ -7,7 +7,6 @@ struct Node {
 
 struct Trie {
   Node* root = new Node();
-
   void add(Node* curr, string key) {
     if (key == "") return;
     int index = key[0] - 'a';
@@ -34,8 +33,8 @@ int main() {
     }
     // TODO: check if the trie is correct.
     //string concat = trie->concat(trie->root, "");
-    //cout << concat << "\n";
-    //cout << concat[k - 1] << "\n";
+    //cout << concat << endl;
+    //cout << concat[k - 1] << endl;
   }
   return 0;
 }
