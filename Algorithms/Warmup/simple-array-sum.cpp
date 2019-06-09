@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int simpleArraySum(int n, vector<int> array) {
+int simpleArraySum(int n, vector<int>& array) {
   int sum = 0;
   for (int i = 0; i < n; i++) {
     sum += array[i];
@@ -16,6 +16,6 @@ int main() {
   for (int i = 0; i < n; i++) {
     cin >> array[i];
   }
-  cout << simpleArraySum(n, array) << "\n";
+  cout << simpleArraySum(n, array) << endl;
   return 0;
 }
