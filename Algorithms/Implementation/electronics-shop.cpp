@@ -11,15 +11,15 @@ int main() {
   for (int i = 0; i < m; i++) {
     cin >> u[i];
   }
-  int max = -1;
+  int mx = -1;
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < m; j++) {
       int cnt = k[i] + u[j];
-      if (cnt <= s and cnt > max) {
-        max = cnt;
+      if (cnt <= s and cnt > mx) {
+        mx = cnt;
       }
     }
   }
-  cout << max << "\n";
+  cout << mx << endl;
   return 0;
 }
