@@ -15,6 +15,6 @@ int main() {
     ld += M[i][i];
     rd += M[i][n - 1 - i];
   }
-  cout << abs(ld - rd) << "\n";
+  cout << abs(ld - rd) << endl;
   return 0;
 }
