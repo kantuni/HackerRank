@@ -8,6 +8,6 @@ int solveMeFirst(int x, int y) {
 int main() {
   int x, y;
   cin >> x >> y;
-  cout << solveMeFirst(x, y) << "\n";
+  cout << solveMeFirst(x, y) << endl;
   return 0;
 }
