@@ -12,7 +12,7 @@ int main() {
       }
       cout << M[i][j];
     }
-    cout << "\n";
+    cout << endl;
   }
   return 0;
 }
